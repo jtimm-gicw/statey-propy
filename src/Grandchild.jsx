@@ -13,7 +13,7 @@
 
 function Grandchild(props) {
   return (
-    <div style={{ border: "2px solid red", padding: "10px", marginTop: "10px" }}>
+    <div style={{ border: "4px solid red", padding: "10px", marginTop: "10px" }}>
       <h4>Grandchild Component</h4>
 
       <p>Count in Grandchild: {props.count}</p>
@@ -31,7 +31,6 @@ function Grandchild(props) {
       </button>
 
       {/*
-        NEXT IDEA TO SAY TO STUDENTS:
         "We are NOT changing state here.
          We are ASKING Parent to change it."
       */}

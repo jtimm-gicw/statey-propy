@@ -1,0 +1,54 @@
+/* 🌈 Global App Styling */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-text {
+  color: #2d2d2d; /* dark gray for good contrast */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* 🧱 Root App Container */
+.app-container {
+  width: 90%;
+  max-width: 900px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🧠 Title Styling (optional if you add a header later) */
+.app-title {
+  font-size: 2rem;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+/* 🧭 Flow Indicator (helps show component structure visually) */
+.flow-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ✨ Simple animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Parent from "./Parent";
+import "./App.css";
 
 /**
  * 🧠 APP (ROOT / ENTRY POINT)
@@ -12,9 +13,14 @@ import Parent from "./Parent";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
+      <h1 className="app-title">React Component Flow Demo</h1>
+      <p className="flow-note">
+        App → Parent → Child → Grandchild (props + state flow)
+      </p>
+
       <Parent />
-    </>
+    </div>
   );
 }
 

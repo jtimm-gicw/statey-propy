@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Child from "./Child";
+import "./App.css";
 
 /**
  * 🧠 PARENT COMPONENT
@@ -23,12 +24,12 @@ function Parent() {
    * The child does NOT change state directly.
    */
   function increaseCount() {
-    setCount(count + 1);
+    setCount(prevCount => prevCount + 1);
   }
 
   return (
-    <div style={{ border: "2px solid blue", padding: "10px" }}>
-      <h2>Parent Component</h2>
+    <div style={{ border: "4px solid blue", padding: "10px" }}>
+      <h2 className="parent-text">Parent Component</h2>
 
       {/* Display state */}
       <p>Count: {count}</p>

@@ -13,7 +13,7 @@ import Grandchild from "./Grandchild";
 
 function Child(props) {
   return (
-    <div style={{ border: "2px solid green", padding: "10px", marginTop: "10px" }}>
+    <div style={{ border: "4px solid green", padding: "10px", marginTop: "10px" }}>
       <h3>Child Component</h3>
 
       <p>Count received from Parent: {props.count}</p>
@@ -24,7 +24,7 @@ function Child(props) {
         Child is just a messenger.
         It forwards data + function to Grandchild.
 
-        NEXT STEP: Go to Grandchild.jsx
+         Go to Grandchild.jsx ---->
       */}
       <Grandchild
         count={props.count}
