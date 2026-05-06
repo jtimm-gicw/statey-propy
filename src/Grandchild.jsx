@@ -1,4 +1,4 @@
-
+import"./App.css";
 /**
  * 🧠 GRANDCHILD COMPONENT
  * ------------------------------------
@@ -26,8 +26,8 @@ function Grandchild(props) {
         → Parent updates state
         → UI re-renders automatically
       */}
-      <button onClick={props.increaseCount}>
-        Increase Count
+      <button className="glow-button" onClick={props.increaseCount}>
+  Increase Count
       </button>
 
       {/*
